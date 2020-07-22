@@ -138,7 +138,7 @@ jobs:
       - name: Deploy Schema
         run: |
           echo Using updated docs host value
-          ./gradlew deploySchema -PdeployDocsSshKey=$DOCS_SSH_KEY -PdeployDocsSshUsername=$DOCS_USERNAME -PdeployDocsHost="$DOCS_HOST" --stacktrace
+          ./gradlew deploySchema -PdeployDocsSshKey=$DOCS_SSH_KEY -PdeployDocsSshUsername=$DOCS_USERNAME -PdeployDocsHost="$DOCS_HOST" --stacktrace --info
 #          export GRADLE_ENTERPRISE_CACHE_USERNAME="$GRADLE_ENTERPRISE_CACHE_USER"
 #          export GRADLE_ENTERPRISE_CACHE_PASSWORD="$GRADLE_ENTERPRISE_CACHE_PASSWORD"
 #          export GRADLE_ENTERPRISE_ACCESS_KEY="$GRADLE_ENTERPRISE_SECRET_ACCESS_KEY"
